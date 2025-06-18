@@ -13,6 +13,8 @@ Re-encodes only the audio stream with advanced audio filters to improve dialogue
 
 Dynamic range compression tuned for speech,
 
+Reduces 150Hz and below frequncies. 
+
 Equalization to boost vocal frequencies and reduce muddiness,
 
 Loudness normalization,
