@@ -10,12 +10,10 @@ import sys
 # === CONFIGURATION ===
 SUPPORTED_EXTENSIONS = [".mkv", ".mp4", ".mov"]
 AUDIO_FILTERS = (
-    "acompressor=threshold=-25dB:ratio=6:attack=10:release=200,"
-    "equalizer=f=50:t=q:w=2:g=-10,"     # STRONGER bass cut @50Hz
-    "equalizer=f=100:t=q:w=2:g=-10,"   # STRONGER bass cut @100Hz
-    "equalizer=f=150:t=q:w=2:g=-6,"     # Additional cut at 150Hz
-    "loudnorm,"
-    "volume=5dB"
+    "equalizer=f=50:t=q:w=2:g=-12,"     # STRONGER bass cut @50Hz
+    "equalizer=f=100:t=q:w=2:g=-12,"   # STRONGER bass cut @100Hz
+    "equalizer=f=150:t=q:w=2:g=-8,"     # Additional cut at 150Hz
+    "speechnorm=e=6.25:r=0.00001:l=1"   #Moderate and slow amplification: hxxps://ffmpeg.org/ffmpeg-filters.html#speechnorm
 )
 
 # A special token to signal that processing is complete
