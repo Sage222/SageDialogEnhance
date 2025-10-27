@@ -38,3 +38,6 @@ Put them in the same folder as the script.
 Make a "videos" subfolder with the source videos.
 Drag and Drop the files into the GUI or click 'Add Files" - Click Start Processing. See Debug tab to for details as it executes.
 Execute the script. It will leave the original files untouched and add a new folder called "processed".
+
+
+v6 - Added "Settings" Tab for easy adjustment of parameters
